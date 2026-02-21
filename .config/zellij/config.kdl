@@ -272,23 +272,8 @@ web_client {
     font "monospace"
 }
 
-theme "default"
+// theme "default"
 
-themes {
-    default {
-        fg "#3E3E56"
-        bg "#F7C0D3"
-        black "#282828"
-        red "#D48A9F"
-        green "#7EA3A6"
-        yellow "#E6B89C"
-        blue "#9A8BC1"
-        magenta "#C895BF"
-        cyan "#7EB4C2"
-        white "#5A5560"
-        orange "#E9A3B9"    // Your color9 (bright red)
-    }
-}
 
 // Use a simplified UI without special fonts (arrow glyphs)
 // Options:
