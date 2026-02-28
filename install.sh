@@ -19,7 +19,7 @@ sudo pacman -S curl unzip obs-studio go helix zellij npm nodejs python-pip pytho
 sudo pacman -S prismlauncher --needed --noconfirm
 
 # for taking pictures
-sudo pacman -S kamoso --noconfirm --needed
+sudo pacman -S snapshot --noconfirm --needed
 
 
 # dependencies for raylib and raylib
