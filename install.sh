@@ -47,6 +47,7 @@ flatpak-install-if-needed net.ankiweb.Anki
 flatpak-install-if-needed net.nokyan.Resources
 flatpak-install-if-needed org.tenacityaudio.Tenacity
 flatpak-install-if-needed org.libretro.RetroArch
+flatpak-install-if-needed org.DolphinEmu.dolphin-emu
 
 npm-install-if-needed() {
     if ! npm list -g "$1" --depth=0 | grep -q "$1"; then
