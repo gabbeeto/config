@@ -6,6 +6,7 @@ sudo pacman -S discord --noconfirm --needed
 sudo pacman -S steam --noconfirm --needed
 sudo pacman -S keyd --noconfirm --needed
 sudo pacman -S yt-dlp --noconfirm --needed
+sudo pacman -S qutebrowser --noconfirm --needed
 
 # best terminal file manager and dependencies
 sudo pacman -S yazi  7zip  poppler fd ripgrep  zoxide resvg imagemagick   --noconfirm --needed
@@ -48,6 +49,7 @@ flatpak-install-if-needed net.nokyan.Resources
 flatpak-install-if-needed org.tenacityaudio.Tenacity
 flatpak-install-if-needed org.libretro.RetroArch
 flatpak-install-if-needed org.DolphinEmu.dolphin-emu
+flatpak-install-if-needed flathub org.kde.okular
 
 npm-install-if-needed() {
     if ! npm list -g "$1" --depth=0 | grep -q "$1"; then
