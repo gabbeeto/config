@@ -2,7 +2,10 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 alias hx 'helix'
 alias download 'yt-dlp -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --embed-subs  --add-metadata --cookies-from-browser firefox --merge-output-format mkv '
-alias downloadP 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --embed-subs --add-metadata --cookies-from-browser firefox--merge-output-format mkv '
+alias downloadP 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --embed-subs --add-metadata --cookies-from-browser firefox --merge-output-format mkv '
+alias downloadM 'yt-dlp -t mp3 --cookies-from-browser firefox  '
+alias downloadPM 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -t mp3 --cookies-from-browser firefox  '
+alias downloadMP 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -t mp3 --cookies-from-browser firefox  '
 
 set -x EDITOR "helix"
 
