@@ -9,7 +9,7 @@ alias downloadMP 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -t mp3 -
 
 set -x EDITOR "helix"
 
-fish_add_path ~/.cargo/bin ~/.local/bin
+fish_add_path ~/.cargo/bin ~/.local/bin ~/.cargo/bin
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

@@ -7,6 +7,7 @@ sudo pacman -S steam --noconfirm --needed
 sudo pacman -S keyd --noconfirm --needed
 sudo pacman -S yt-dlp --noconfirm --needed
 sudo pacman -S qutebrowser --noconfirm --needed
+sudo pacman -S cargo --noconfirm --needed
 
 # best terminal file manager and dependencies
 sudo pacman -S yazi  7zip  poppler fd ripgrep  zoxide resvg imagemagick   --noconfirm --needed
@@ -90,7 +91,7 @@ echo "alias downloadP='yt-dlp -o  \"%(playlist_index)03d - %(title)s.%(ext)s\" -
 echo "export EDITOR=\"helix\"" >> ~/.bashrc
 echo "export PATH=\$PATH:~/.cargo/bin" >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
-
+echo 'export PATH="$PATH:$HOME/.cargo/bin"' >> ~/.bashrc
 
 # I use the y command to navegate through yazi
 echo "function y() {
@@ -109,3 +110,6 @@ sudo keyd reload
 git config --global init.defaultBranch main
 git config --global pull.rebase false
 git config --global core.editor "helix"
+
+cargo install kd-rust
+kd --update-dict
