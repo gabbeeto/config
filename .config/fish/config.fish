@@ -8,8 +8,13 @@ alias downloadPM 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -t mp3 -
 alias downloadMP 'yt-dlp -o  "%(playlist_index)03d - %(title)s.%(ext)s" -t mp3 --cookies-from-browser firefox  '
 
 set -x EDITOR "helix"
+set -x EDITOR "helix"
 
-fish_add_path ~/.cargo/bin ~/.local/bin ~/.cargo/bin
+set -x GTK_IM_MODULE 'fcitx'
+set -x QT_IM_MODULE 'fcitx'
+set -x XMODIFIERS '@im=fcitx'
+
+fish_add_path ~/.cargo/bin ~/.local/bin
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

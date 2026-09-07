@@ -27,6 +27,18 @@ sudo pacman -S snapshot --noconfirm --needed
 # dependencies for raylib and raylib
 sudo pacman -S alsa-lib  libx11 libxrandr libxi libxcursor libxinerama libxkbcommon lib32-wayland lib32-libxkbcommon raylib --noconfirm --needed
 
+# dependencies for phonemizer
+sudo pacman -S festival festival-english espeak-ng --noconfirm --needed
+pipx install phonemizer
+
+# fcitx5 for ipa and chinese
+sudo pacman -S fcitx5 fcitx5-gtk fcitx5-qt fcitx5-table-other fcitx5-chinese-addons fcitx5-rime fcitx5-pinyin-zhwiki --noconfirm --needed
+
+echo 'export GTK_IM_MODULE=fcitx' >> ~/.bashrc
+echo 'export QT_IM_MODULE=fcitx' >> ~/.bashrc
+echo 'export XMODIFIERS=@im=fcitx' >> ~/.bashrc
+
+
 flatpak-install-if-needed() {
     if ! flatpak list --app | grep -q "$1"; then
         flatpak install --noninteractive flathub "$1"
